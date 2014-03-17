@@ -1,0 +1,12 @@
+
+[ui]
+username=michi <michidev54@gmail.com>
+
+[extensions]
+grraphlog=
+color=
+pager=
+
+[pager]
+pager=LESS='FSRX' less
+

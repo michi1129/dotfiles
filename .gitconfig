@@ -1,0 +1,7 @@
+[user]
+	name = michi
+	email = ro.michi1129@gmail.com
+[color]
+	ui = auto
+[core]
+	autocrlf = false

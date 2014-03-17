@@ -1,0 +1,14 @@
+set guifont=Ricty_Regular:h13
+
+
+syntax on
+
+colorscheme solarized
+set background=dark
+
+
+source $VIMRUNTIME/delmenu.vim
+set langmenu=ja_jp.utf-8
+source $VIMRUNTIME/menu.vim
+
+
