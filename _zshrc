@@ -1,0 +1,29 @@
+
+# aliases
+alias ll="ls -l"
+alias lla="ls -la"
+
+
+# zsh completion
+autoload -U compinit
+compinit
+
+# zsh command history
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+setopt hist_ignore_dups
+setopt share_history
+
+# zsh prompt
+PROMPT='[%n@%m]%# '
+RPROMPT='[%d]'
+
+
+# python virtualenv
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME=~/.virtualenvs
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
+
+
