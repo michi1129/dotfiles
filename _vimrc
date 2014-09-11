@@ -169,3 +169,9 @@ onoremap gc :<C-u>normal gc<Enter>
 
 
 
+" psgiをperlに関連付け
+syntax on
+filetype on
+au BufNewFile,BufRead *.psgi set filetype=perl
+
+
