@@ -78,7 +78,7 @@ set backspace=eol,indent,start
 set iminsert=0
 set imsearch=0
 set nobackup
-set directory=c:\temp
+" set directory=c:\temp
 set ignorecase
 set smartcase
 
