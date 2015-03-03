@@ -1,24 +1,26 @@
+" Note: Skip initialization for vim-tiny or vim-small.
+if !1 | finish | endif
+
 if has('vim_starting')
- set nocompatible               " Be iMproved
- set runtimepath+=~/vimfiles/bundle/neobundle.vim/
+  if &compatible
+    set nocompatible               " Be iMproved
+  endif
+
+  " Required
+  set runtimepath+=~/vimfiles/bundle/neobundle.vim/
 endif
 
-call neobundle#rc(expand('~/vimfiles/bundle/'))
+" Required
+call neobundle#begin(expand('~/vimfiles/bundle/'))
 
 " Let NeoBundle manage NeoBundle
+" Required:
 NeoBundleFetch 'Shougo/neobundle.vim'
 
-" Recommended to install
-"NeoBundle 'Shougo/vimproc', {
-" \ 'build' : {
-" \     'windows' : 'make -f make_mingw32.mak',
-" \     'cygwin' : 'make -f make_cygwin.mak',
-" \     'mac' : 'make -f make_mac.mak',
-" \     'unix' : 'make -f make_unix.mak',
-" \    },
-" \ }
 
-
+" My Bundles here:
+" Refer to |:NeoBundle-examples|.
+" Note: You don't set neobundle setting in .gvimrc!
 
 
 " NeoBundle 'Shougo/neobundle.vim'
@@ -38,22 +40,14 @@ NeoBundle 'jeffreyiacono/vim-colors-wombat'
 NeoBundle 'altercation/vim-colors-solarized'
 
 
+call neobundle#end()
 
-" My Bundles here:
-" Refer to |:NeoBundle-examples|.
-"
-" Note: You don't set neobundle setting in .gvimrc!
 
-" ...
-
+" Required:
 filetype plugin indent on     " Required!
-"
-" Brief help
-" :NeoBundleList          - list configured bundles
-" :NeoBundleInstall(!)    - install(update) bundles
-" :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
-" Installation check.
+" If there are uninstalled bundles found on startup,
+" this will conveniently prompt you to install them.
 NeoBundleCheck
 
 
