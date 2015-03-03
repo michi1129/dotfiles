@@ -1,4 +1,7 @@
-set guifont=Ricty_Regular:h13
+" set guifont=Ricty_Regular:h13
+"set guifont=IPAGothic:h11
+set guifont=MigMix_1M:h12
+"set guifont=Ricty_Diminished:h12
 
 
 syntax on
