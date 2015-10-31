@@ -7,11 +7,12 @@ if has('vim_starting')
   endif
 
   " Required
-  set runtimepath+=~/vimfiles/bundle/neobundle.vim/
+  set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
 " Required
-call neobundle#begin(expand('~/vimfiles/bundle/'))
+call neobundle#begin(expand('~/.vim/bundle/'))
+"call neobundle#rc(expand('~/.vim/bundle/'))
 
 " Let NeoBundle manage NeoBundle
 " Required:
@@ -40,6 +41,11 @@ NeoBundle 'jeffreyiacono/vim-colors-wombat'
 NeoBundle 'altercation/vim-colors-solarized'
 
 
+NeoBundle 'vim-jp/vim-go-extra'
+NeoBundle 'google/vim-ft-go'
+"NeoBundle 'faith/vim-go'
+
+
 call neobundle#end()
 
 
@@ -51,14 +57,7 @@ filetype plugin indent on     " Required!
 NeoBundleCheck
 
 
-
-
-
-
-
-
 " -------------------------------
-
 
 
 set number
@@ -72,7 +71,6 @@ set backspace=eol,indent,start
 set iminsert=0
 set imsearch=0
 set nobackup
-" set directory=c:\temp
 set ignorecase
 set smartcase
 
@@ -143,7 +141,7 @@ endif
 " 保存時に行末の空白を除去する
 autocmd BufWritePre * :%s/\s\+$//ge
 " 保存時にtabをスペースに変換する
-autocmd BufWritePre * :%s/\t/  /ge
+"autocmd BufWritePre * :%s/\t/  /ge
 
 noremap <Space>j <C-f>
 noremap <Space>k <C-b>
