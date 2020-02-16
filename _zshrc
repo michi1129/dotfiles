@@ -60,7 +60,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
 # nodebrew
-export PATH="$HOME/.nodebrew/current/bin:$PATH"
+export PATH="$HOME/.nodenv/bin:$PATH"
+eval "$(nodenv init -)"
 
 # qmk
 export PATH="/usr/local/opt/avr-gcc@7/bin:$PATH"
