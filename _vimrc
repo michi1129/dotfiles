@@ -45,6 +45,7 @@ NeoBundle 'vim-jp/vim-go-extra'
 NeoBundle 'google/vim-ft-go'
 "NeoBundle 'faith/vim-go'
 
+NeoBundle 'stephencelis/vim-mml'
 
 call neobundle#end()
 
@@ -165,5 +166,8 @@ onoremap gc :<C-u>normal gc<Enter>
 syntax on
 filetype on
 au BufNewFile,BufRead *.psgi set filetype=perl
+
+
+autocmd FileType mml nnoremap <Leader>m :MmlMake<CR>
 
 
