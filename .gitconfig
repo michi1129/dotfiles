@@ -5,3 +5,8 @@
 	ui = auto
 [core]
 	autocrlf = false
+[alias]
+        co = checkout
+        br = branch
+        fp = fetch origin --prune
+        logg = log --oneline --graph --decorate
